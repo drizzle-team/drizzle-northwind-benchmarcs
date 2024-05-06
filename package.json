@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare:prisma": "npx prisma generate --schema src/prisma/schema.prisma",
-    "start": "pnpm prepare:prisma && node --loader tsx --expose-gc src/common/benchmark.ts"
+    "start": "pnpm prepare:prisma && node --import tsx --expose-gc src/common/benchmark.ts"
   },
   "keywords": [],
   "author": "",
